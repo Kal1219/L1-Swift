@@ -10,16 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack
+        ZStack
         {
-            Image("fondo")
-                .resizable()
-                .cornerRadius(15)
-                .aspectRatio(contentMode: .fit)
-                .padding()
-            Text("Fondo de pantalla")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
+            Color(.red)
+            VStack
+            {
+                Image("fondo")
+                    .resizable()
+                    .cornerRadius(15)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                Text("Fondo de pantalla")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+            }
         }
         
         
